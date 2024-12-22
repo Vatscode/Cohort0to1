@@ -1,23 +1,23 @@
-// // // // // /*Storing a value to a variable and then printing it
-// // // // //   var x= 12;
-// // // // //   console.log(x);
-// // // // //  */
+/*Storing a value to a variable and then printing it
+   var x= 12;
+   console.log(x);
+  */
  
-// // // // //   // //1. Write the program to greet a person given their first and last name.
-// // // // //   //   var first_name = "Vats";
-// // // // //   //   var last_name = "Upadhyay";
+   // //1. Write the program to greet a person given their first and last name.
+  //   var first_name = "Vats";
+   //   var last_name = "Upadhyay";
 
-// // // // //   //   console.log("Hello, " + first_name + " " + last_name +  " how are you?")
+   //   console.log("Hello, " + first_name + " " + last_name +  " how are you?")
 
-// // // // //     // //2. Write a program that greets a person based on their gender.(If else)
-// // // // //     // const gender = "male";
+     // //2. Write a program that greets a person based on their gender.(If else)
+     // const gender = "male";
 
-// // // // //     // if(gender=="male"){
-// // // // //     //   console.log("Hello Mr. how are you?")
-// // // // //     // }
-// // // // //     // else if(gender=="female"){
-// // // // //     //   console.log("Hello Ms. how are you?")
-// // // // //     // }
+     // if(gender=="male"){
+   //   console.log("Hello Mr. how are you?")
+     // }
+     // else if(gender=="female"){
+     //   console.log("Hello Ms. how are you?")
+    // }
 
 
    
@@ -31,38 +31,38 @@
 //    //3. Write a program that counts from 0 - 1000 and prints (for loop)
 
 //    for (var i = 0; i < 1000; i++) {
-//  //     process.stdout.write(i + " "); // Prints without adding new lines
-//  // //   }
-// // // // //   console.log(); // Adds a final newline after the loop
-// // // //   let a =1;
-// // // //   console.log(a);
+  //     process.stdout.write(i + " "); // Prints without adding new lines
+//   }
+ //   console.log(); // Adds a final newline after the loop
+ //   let a =1;
+ //   console.log(a);
 
-// / // Arrays
-// // // // const personArray = ["harkirat", "vats", "kushal"];
-// // // // const ages = [22, 26, 23, 24];
-// // // // let result = " ";
-// // // // for(let i=0; i<ages.length;i++){
-//  //   if(ages[i]% 2==0){
-// // // //     result+= ages[i] + " ";
+ // Arrays
+ // const personArray = ["harkirat", "vats", "kushal"];
+ // const ages = [22, 26, 23, 24];
+ // let result = " ";
+ // for(let i=0; i<ages.length;i++){
+  //   if(ages[i]% 2==0){
+//     result+= ages[i] + " ";
 
-// // // //    }
-// // // // }
-//  // console.log(result.trim()); // keep the output outside the loop or else it will print after every iteration
+ //    }
+ // }
+ // console.log(result.trim()); // keep the output outside the loop or else it will print after every iteration
 
-// // // // console.log(personArray[0])
-// // // // console.log(personArray[1])
+ // console.log(personArray[0])
+ // console.log(personArray[1])
 
-//  // // console.log(personArray[2])
+ // console.log(personArray[2])
 
-// // // // Objects
+// Objects
 
-// // // const users1 = {
-//  //   firstName: "Harkirat", 
-// // //   gender:  "male"
-// // // }
+// const users1 = {
+ //   firstName: "Harkirat", 
+ //   gender:  "male"
+ // }
 
-//  // console.log(users1["firstName"])
-// // // console.log(users1["gender"]) // Objects can be as nested as yout like, you can have arrays inside of you object just like python
+  // console.log(users1["firstName"])
+ // console.log(users1["gender"]) // Objects can be as nested as yout like, you can have arrays inside of you object just like python
 
 
 // // const allUsers = [{
