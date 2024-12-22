@@ -1,0 +1,12 @@
+you can use target=" _blank" to go to next tab for websites
+you can use <img> to add an image
+
+Css ATRIBUTES TO KNOW
+COLOR
+BACKGROUND
+border-radius
+borderpadding/margin
+box-shadow
+if you want to add room/space inside your DIV you use padding; use margin for outside
+You use flexbox; flex; for more spacing, equal spacing, having CHildrens all childrens on one side
+You want one parent to control all the kids
