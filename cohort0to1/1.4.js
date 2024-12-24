@@ -1,13 +1,13 @@
 //Q. Create a function to find sum of numbers from 1 to 100
-// let total=0;
-// function sum(){
-//     for (let i = 0; i <=100;i++){
-//         total = total + i;
-//     }
-//     console.log(total)
+let total=0;
+function sum(){
+    for (let i = 0; i <=100;i++){
+        total = total + i;
+    }
+    console.log(total)
        
-// }
-//     sum()
+}
+    sum()
 
     //Q. Create a function to find sum of numbers from 1 to n
 
