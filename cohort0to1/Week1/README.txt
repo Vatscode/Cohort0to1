@@ -36,5 +36,44 @@ Arrays
 }
   logWhatsPresent(log2)
 */
+/*
+Sync Functions
+Together, one after the other,sequential.Only one thing is happening at a time.
 
 
+Async Functions
+
+Opposite of synchronous
+Happens in parts
+Multiple things are context switching with each other
+
+*/
+Even if you are single threaded(brain can do only one thing at a time), you can do things parallely by delegating.
+You can also context swich between takss if need be ( the net time to do both the things still be the same)
+
+Net amount of times take to do a task can be decreased by doing these two things (delegating and context switching)
+
+const fs = require("fs");
+// filesystem module ( lets you import other modules)
+
+Promises are just sytactical sugar (under the hood it still uses callback, event loop and stack)
+It makes the code look more readable.
+
+Now to create our own Asynchronous functions we use Promises
+
+** Usually all async functions you will write will be on top of JS provided async functions like
+setTimeout or fs.readFile
+
+When using promises you dont worry about callbacks, promises are better way to write your code for some 
+reasons like callbackhell which will be explained later.
+
+Promise is just a class which makes callbacks and async functions slightly more readable
+When initializing a promise, first argument needs to be a function.
+
+A promise can have three state. Pending, resolved, rejected.
+when you see pending it means the function or arguments inside has not been called yet.
+
+** Await needs to be wrapped inside a main function then you call main, it cannot be at the top level.
+
+You cannot use await without async they go hand in hand, again under the hood it still uses promises which uses 
+callbacks but this syntax is much more cleaner and appealing to eye.
