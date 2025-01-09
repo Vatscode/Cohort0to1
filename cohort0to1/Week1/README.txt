@@ -54,7 +54,7 @@ You can also context swich between takss if need be ( the net time to do both th
 Net amount of times take to do a task can be decreased by doing these two things (delegating and context switching)
 
 const fs = require("fs");
-// filesystem module ( lets you import other modules)
+// filesystem module (lets you import other modules)
 
 Promises are just sytactical sugar (under the hood it still uses callback, event loop and stack)
 It makes the code look more readable.
@@ -77,3 +77,7 @@ when you see pending it means the function or arguments inside has not been call
 
 You cannot use await without async they go hand in hand, again under the hood it still uses promises which uses 
 callbacks but this syntax is much more cleaner and appealing to eye.
+
+
+Middlewares
+In real world they are usually used to do some pre checks/authentication before user can access the website/file.
