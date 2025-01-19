@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        let timeout;
+        function debouncePoulateDiv(){
+         
+            clearTimeout(timeout);
+            timeout = setTimeout(function(){
+                populateDiv() },1000);
+            
+        }
+        function populateDiv(){
+            // alert("Hi, your sum is being displayed. Click OK")
+            //document
+            const principal  = document.getElementById("principal").value;
+            const rate = document.getElementById("rate").value;
+            const time = document.getElementById("time").value;
+
+
+            // const element = document.getElementById("finalSum")
+
+            fetch("http://localhost:8000/interest?principal=" + principal + "&rate=" + rate + "&time=" + time)
+            .then(function(response){
+                response.json()
+                .then(function(ans){
+                    document.getElementById("finalTotal").innerHTML = 
+                `Total: ${ans.total}<br>Interest: ${ans.interest}` + ("%");
+                })
+            });
+            // element.innerHTML = ("The sum is " + (parseInt(a) + parseInt(b))); //string => int
+
+
+
+        }
+        
+
+        
+        // function populateDiv(){
+        //     // alert("Hi, your sum is being displayed. Click OK")
+        //     //document
+        //     const a = document.getElementById("firstNumber").value;
+        //     const b = document.getElementById("secondNumber").value;
+
+
+        //     // const element = document.getElementById("finalSum")
+
+        //     fetch("http://localhost:8000/sum?a=" + a + "&b=" + b)
+        //     .then(function(response){
+        //         response.text()
+        //         .then(function(ans){
+        //             document.getElementById("finalSum").innerHTML = ans;
+        //         })
+        //     });
+        //     // element.innerHTML = ("The sum is " + (parseInt(a) + parseInt(b))); //string => int
+
+
+
+        // }
+        // async function populateDiv2(){
+        //     // alert("Hi, your sum is being displayed. Click OK")
+         
+        //     const a = document.getElementById("firstNumber").value;
+        //     const b = document.getElementById("secondNumber").value;
+
+
+
+
+        //     const response = await fetch("http://localhost:8000/sum?a=" + a + "&b=" + b)
+        //     const ans = await response.text();
+        //             document.getElementById("finalSum").innerHTML = ans;
+            
+           
+            
+
+
+
+        // }
+
+
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input id="firstNumber" type ="text" placeholder="First number"> </input> <br> </br>
+    <input id = "secondNumber" type ="text" placeholder="Second number"> </input> <br> </br>
+    <button onclick="populateDiv()"> Calculate sum </button> <br></br>
+
+    <div id="finalSum"></div> -->
+    <input oninput="debouncePoulateDiv()" id="principal" type="text" placeholder="Enter principal"> </input> <br> </br>
+    <input oninput="debouncePoulateDiv()" id = "rate" type ="text" placeholder="Enter rate"> </input> <br> </br>
+    <input oninput="debouncePoulateDiv()" id = "time" type ="text" placeholder="Enter time"> </input> <br> </br>
+    <button onclick="populateDiv()"> Calculate Total </button> <br></br>
+
+    <div id="finalTotal"></div>
+</body>
+
+</html>
+      
+    
+       
+
+
